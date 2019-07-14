@@ -17,7 +17,7 @@ const strStr = (haystack, needle) => {
 
 console.log(strStr('', '')); // 0
 console.log(strStr('', 'a')); // -1
-console.log(strStr('a', 'a')); // 0
+console.log(strStr('sam', 'sam')); // 0
 console.log(strStr('aaa', 'a')); // 0
 console.log(strStr('hello', 'll')); // 2
 console.log(strStr('aaaaa', 'bba')); // -1
