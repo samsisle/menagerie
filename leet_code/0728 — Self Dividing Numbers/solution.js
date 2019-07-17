@@ -1,3 +1,23 @@
+/**
+ * Source : https://leetcode.com/problems/self-dividing-numbers/
+ * Author : Samuel Ko, hhsu0219
+ * Date   : 2019-07-14
+ * 
+ * Time Complexity  :  ?
+ * Space Complexity :  ?
+ */
+
+// My solution... very slow
+
+// const selfDividingNumbers = (left, right) => {
+//   let output = [];
+//   for (let i = left; i <= right; i++) {
+//     let arr = [...i + ''].map(n => Number(n));
+//     if (arr.every(value => i % value === 0)) output.push(i);
+//   }
+//   return output;
+// }
+
 var selfDividingNumbers = function(left, right) {
   let valid = [];
   for (let i = left; i <= right; i++) {
