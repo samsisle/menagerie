@@ -2,12 +2,12 @@
  * Source : https://leetcode.com/problems/self-dividing-numbers/
  * Author : Samuel Ko, hhsu0219
  * Date   : 2019-07-14
- * 
- * Time Complexity  :  ?
- * Space Complexity :  ?
+ *
+ * Time Complexity  :  O(nlog(n))
+ * Space Complexity :  O(1)
  */
 
-// My solution... very slow
+// My solution... is very slow haha
 
 // const selfDividingNumbers = (left, right) => {
 //   let output = [];
@@ -18,17 +18,21 @@
 //   return output;
 // }
 
-var selfDividingNumbers = function(left, right) {
+const selfDividingNumbers = (left, right) => {
   let valid = [];
+  // iterate integers from left to right inclusive
   for (let i = left; i <= right; i++) {
+    // if i is a self-dividing number, push i to array valid
     if (selfD(i)) valid.push(i);
   }
   return valid;
 };
 
-var selfD = function(num) {
+const selfD = num => {
   var value = num;
   while (value) {
+    // a unique way of iterating over every digit in num to see
+    // whether the num itself is self-dividing
     let digit = value % 10;
     if (num % digit !== 0) return false;
     value = Math.floor(value / 10);
@@ -36,4 +40,4 @@ var selfD = function(num) {
   return true;
 };
 
-console.log(selfDividingNumbers(10, 13));
+console.log(selfDividingNumbers(1, 1000));
