@@ -2,27 +2,33 @@ import React, { useState } from 'react';
 
 import { stars } from '../lib/stars';
 
+import '../css/Stars.css';
+
 export default function Stars() {
   const [rating, setRating] = useState(Number(window.localStorage.getItem('rating') || 0));
   const [hover, setHover] = useState(0);
 
-  const handleRating = id => () => {
-    setRating(id);
-    window.localStorage.setItem('rating', id);
-    setHover(0);
-  };
-  const handleReset = () => {
+  function handleRating(id) {
+    return () => {
+      setRating(id);
+      window.localStorage.setItem('rating', id);
+      setHover(0);
+    };
+  }
+  function handleReset() {
     setRating(0);
     window.localStorage.setItem('rating', 0);
-  };
-  const handleMouseEnter = id => () => {
-    setRating(0);
-    setHover(id);
-  };
-  const handleMouseLeave = () => {
+  }
+  function handleMouseEnter(id) {
+    return () => {
+      setRating(0);
+      setHover(id);
+    };
+  }
+  function handleMouseLeave() {
     setRating(Number(window.localStorage.getItem('rating')));
     setHover(0);
-  };
+  }
 
   return (
     <>
