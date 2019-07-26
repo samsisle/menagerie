@@ -1,5 +1,6 @@
 /**
  * Source : https://www.skilledinc.com/app/feedback-details/2243
+ * Deploy : https://rating.samsisle.now.sh
  * Author : Samuel Ko
  * Date   : 2019-07-16
  *
