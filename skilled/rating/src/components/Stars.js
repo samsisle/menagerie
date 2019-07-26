@@ -8,26 +8,34 @@ export default function Stars() {
   const [rating, setRating] = useState(Number(window.localStorage.getItem('rating') || 0));
   const [hover, setHover] = useState(0);
 
-  function handleRating(id) {
+  function handleRating(n) {
     return () => {
-      setRating(id);
-      window.localStorage.setItem('rating', id);
+      setRating(n);
+      window.localStorage.setItem('rating', n);
       setHover(0);
     };
   }
-  function handleReset() {
-    setRating(0);
-    window.localStorage.setItem('rating', 0);
-  }
-  function handleMouseEnter(id) {
+
+  function handleMouseEnter(n) {
     return () => {
       setRating(0);
-      setHover(id);
+      setHover(n);
     };
   }
+
   function handleMouseLeave() {
     setRating(Number(window.localStorage.getItem('rating')));
     setHover(0);
+  }
+
+  function handleColor(n) {
+    if (hover >= n) return '#1da1f2';
+    else return rating >= n ? '#51bb7b' : '#808080';
+  }
+
+  function handleReset() {
+    setRating(0);
+    window.localStorage.setItem('rating', 0);
   }
 
   return (
@@ -44,10 +52,8 @@ export default function Stars() {
               onMouseLeave={handleMouseLeave}
             >
               <polygon
-                fill={hover >= star.left ? '#1da1f2' : rating >= star.left ? '#51bb7b' : '#808080'}
-                stroke={
-                  hover >= star.left ? '#1da1f2' : rating >= star.left ? '#51bb7b' : '#808080'
-                }
+                fill={handleColor(star.left)}
+                stroke={handleColor(star.left)}
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -64,12 +70,8 @@ export default function Stars() {
               onMouseLeave={handleMouseLeave}
             >
               <polygon
-                fill={
-                  hover >= star.right ? '#1da1f2' : rating >= star.right ? '#51bb7b' : '#808080'
-                }
-                stroke={
-                  hover >= star.right ? '#1da1f2' : rating >= star.right ? '#51bb7b' : '#808080'
-                }
+                fill={handleColor(star.right)}
+                stroke={handleColor(star.right)}
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
