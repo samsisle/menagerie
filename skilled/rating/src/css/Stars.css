@@ -3,6 +3,10 @@
   margin-right: 1rem;
 }
 
+.star {
+  display: flex;
+}
+
 .reset {
   background-color: #333333;
   border: none;
