@@ -7,6 +7,8 @@
  * Space Complexity : O(1)
  */
 
+const performance = require('../../lib/performance');
+
 function fib(n) {
   let memo = {};
   for (let i = 0; i <= n; i++) {
@@ -16,4 +18,10 @@ function fib(n) {
   return memo[n];
 }
 
-console.log(fib(100));
+// Slow as hell recursive method
+// function fib(num) {
+//   if (num <= 1) return 1;
+//   return fib(num - 1) + fib(num - 2);
+// }
+
+performance.test(() => fib(42));
