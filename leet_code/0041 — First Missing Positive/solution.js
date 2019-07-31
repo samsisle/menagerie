@@ -7,7 +7,7 @@
  * Space Complexity : O(1)
  */
 
-const performance = require('../../lib/performance');
+const performance = require('../../performance');
 
 function firstMissingPositive(nums) {
   let map = new Map(); // using ES6 new Map
