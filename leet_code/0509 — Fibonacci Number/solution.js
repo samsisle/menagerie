@@ -1,6 +1,6 @@
 /**
  * Source : https://leetcode.com/problems/fibonacci-number/
- * Author : Samuel Ko
+ * Author : samsisle
  * Date   : 2019-07-28
  *
  * Time Complexity  : O(n)
