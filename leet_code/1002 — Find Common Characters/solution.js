@@ -1,7 +1,7 @@
 /**
  * Source : https://leetcode.com/problems/middle-of-the-linked-list/
  * Author : Samuel Ko
- * Date   : 2019-08-01
+ * Date   : 2019-08-02
  *
  * Time Complexity  : ??? (approximately/almost n^2) ???
  * Space Complexity : O(1)
