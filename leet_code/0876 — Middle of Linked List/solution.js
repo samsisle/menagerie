@@ -1,6 +1,6 @@
 /**
  * Source : https://leetcode.com/problems/middle-of-the-linked-list/
- * Author : Samuel Ko
+ * Author : samsisle
  * Date   : 2019-08-01
  *
  * Time Complexity  : O(n)
