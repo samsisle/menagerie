@@ -1,6 +1,6 @@
 /**
  * Source : https://leetcode.com/problems/first-missing-positive/
- * Author : Samuel Ko
+ * Author : samsisle
  * Date   : 2019-07-29
  *
  * Time Complexity  : O(n)
