@@ -22,7 +22,7 @@ function commonChars(arr) {
       let index = comparingStr.indexOf(char);
       // (comparingStr[index] = true) --> we are modifying the
       // comparingStr array so indexOf does not log the same 
-      // indexOf number when we have two of the same numbers,
+      // indexOf number when we have two of the same characters,
       // for example the character l is located at index of 0 and 4
       // for the word label
       return index > -1 ? (comparingStr[index] = true) : false;
