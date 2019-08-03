@@ -1,6 +1,6 @@
 /**
  * Source : https://leetcode.com/problems/find-common-characters/
- * Author : Samuel Ko
+ * Author : samsisle
  * Date   : 2019-08-02
  *
  * Time Complexity  : ??? (approximately/almost n^2) ???
