@@ -1,6 +1,6 @@
 /**
  * Source : https://leetcode.com/problems/remove-duplicates-from-sorted-array/
- * Author : samsisle
+ * Author : samsisle, haleyysz
  * Date   : 2019-08-04
  *
  * Time Complexity  : O(n)
@@ -9,7 +9,14 @@
 
 const performance = require('../../performance');
 
-function removeDuplicate(nums) {
+/**
+ * My original solution was not as efficient as haleyysz's solution
+ * because removing elements from the array using Array.prototype.slice()
+ * is costlier than simply rearranging elements. This is because the 
+ * rest of the array's contents will need to be moved to a new index
+ * everytime an element is deleted.
+ * 
+ * function removeDuplicates(nums) {
   for (let i = 0; i < nums.length; i++) {
     if (nums[i] === nums[i + 1]) {
       nums.splice(i + 1, 1);
@@ -18,5 +25,18 @@ function removeDuplicate(nums) {
   }
   return nums.length;
 }
+ */
 
-performance.test(() => removeDuplicate([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]));
+function removeDuplicates(nums) {
+  let i = 0;
+  for (let j = 1; j < nums.length; j++) {
+    if (nums[j] === nums[j - 1]) i++;
+    else {
+      nums[j - i] = nums[j];
+    }
+  }
+  return nums.length - i;
+}
+
+performance.test(() => removeDuplicates([1, 1, 2]));
+performance.test(() => removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]));
