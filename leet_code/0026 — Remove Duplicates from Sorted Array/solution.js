@@ -17,7 +17,7 @@ const performance = require('../../performance');
  * everytime an element is deleted.
  * 
  * function removeDuplicates(nums) {
-  for (let i = 0; i < nums.length; i++) {
+  for (let i = 0; i < nums.length - 1; i++) {
     if (nums[i] === nums[i + 1]) {
       nums.splice(i + 1, 1);
       i--;
@@ -27,14 +27,14 @@ const performance = require('../../performance');
 }
  */
 
-function removeDuplicates(nums) {
-  let i = 0;
-  for (let j = 1; j < nums.length; j++) {
-    if (nums[j] === nums[j - 1]) i++;
-    else nums[j - i] = nums[j];
-  }
-  return nums.length - i;
-}
+// function removeDuplicates(nums) {
+//   let i = 0;
+//   for (let j = 1; j < nums.length; j++) {
+//     if (nums[j] === nums[j - 1]) i++;
+//     else nums[j - i] = nums[j];
+//   }
+//   return nums.length - i;
+// }
 
 performance.test(() => removeDuplicates([1, 1, 2]));
 performance.test(() => removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]));
