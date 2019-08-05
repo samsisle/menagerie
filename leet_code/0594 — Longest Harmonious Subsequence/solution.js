@@ -1,6 +1,6 @@
 /**
  * Source : https://leetcode.com/problems/longest-harmonious-subsequence/
- * Author : haleyysz, samsisle
+ * Author : haleyysz
  * Date   : 2019-08-02
  *
  * Time Complexity  : O(n)
@@ -10,14 +10,15 @@
 const performance = require('../../performance');
 
 function findLHS(nums) {
-  let map = new Map(), max = 0;
+  let map = new Map(),
+    max = 0;
 
   // create the map
   for (let n of nums) {
     if (map.has(n)) map.set(n, map.get(n) + 1);
     else map.set(n, 1);
   }
-  
+
   // iterate through all the keys, and update the max
   // accordingly as we iterate through all keys in the map
   for (let key of map.keys()) {
