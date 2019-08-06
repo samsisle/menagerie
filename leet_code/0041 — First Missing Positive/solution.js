@@ -4,7 +4,7 @@
  * Date   : 2019-07-29
  *
  * Time Complexity  : O(n)
- * Space Complexity : O(1)
+ * Space Complexity : O(n)
  */
 
 const performance = require('../../performance');
