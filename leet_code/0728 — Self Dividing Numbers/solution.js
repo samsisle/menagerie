@@ -1,6 +1,6 @@
 /**
  * Source : https://leetcode.com/problems/self-dividing-numbers/
- * Author : hhsu0219, samsisle
+ * Author : samsisle, hhsu0219
  * Date   : 2019-07-14
  *
  * Time Complexity  :  O(nlog(n))
