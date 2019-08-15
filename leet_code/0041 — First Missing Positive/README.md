@@ -25,4 +25,4 @@ Output: 1
 
 **Note:**
 
-Your algorithm should run in O(n) time and uses constant extra space.
+Your algorithm should run in _O(n)_ time and uses constant extra space.
