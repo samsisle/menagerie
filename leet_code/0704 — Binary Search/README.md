@@ -17,3 +17,9 @@ Input: nums = [-1,0,3,5,9,12], target = 2
 Output: -1
 Explanation: 2 does not exist in nums so return -1
 ```
+
+**Note:**
+
+1. You may assume that all elements in `nums` are unique.
+2. `n` will be in the range `[1, 10000]`.
+3. The value of each element in `nums` will be in range `[-9999, 9999]`.
