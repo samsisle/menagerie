@@ -33,3 +33,7 @@ Explanation: There is no cycle in the linked list.
 ```
 
 ![circular linked list example 3](https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test3.png)
+
+**Follow up:**
+
+Can you solve it using _O(1)_ (i.e. constant) memory?
