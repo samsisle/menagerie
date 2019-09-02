@@ -12,13 +12,14 @@ function rps(n) {
   const plays = ['rock', 'paper', 'scissors'];
 
   function findOutcome(roundsLeft, result) {
+    // base case
     if (roundsLeft === 0) {
       outcomes.push(result);
       return;
     }
 
     for (let play of plays) {
-      debugger;
+      // recursive step
       findOutcome(roundsLeft - 1, result.concat(play));
     }
   }
