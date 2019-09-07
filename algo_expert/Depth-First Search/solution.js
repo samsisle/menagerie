@@ -40,4 +40,15 @@ class Node {
 
     return array;
   }
+
+  // recursive solution
+  depthFirstSearchRecursive(array) {
+    array.push(this.name);
+
+    for (let child of this.children) {
+      child.depthFirstSearchRecursive(array);
+    }
+
+    return array;
+  }
 }
