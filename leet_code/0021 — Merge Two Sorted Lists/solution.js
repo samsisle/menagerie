@@ -11,18 +11,14 @@ function mergeTwoLists(h1, h2) {
   if (!h1) return h2;
   if (!h2) return h1;
 
-  let output;
-  let main;
-  let off;
+  let output, main, off;
 
   // set the main to the smallest val Node
   if (h1.val <= h2.val) {
-    output = h1;
-    main = h1;
+    output = main = h1;
     off = h2;
   } else {
-    output = h2;
-    main = h2;
+    output = main = h2;
     off = h1;
   }
 
@@ -31,9 +27,7 @@ function mergeTwoLists(h1, h2) {
     if (main.next.val <= off.val) {
       main = main.next;
     } else {
-      let temp = main.next;
-      main.next = off;
-      off = temp;
+      [main.next, off] = [off, main.next];
     }
   }
 
