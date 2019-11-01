@@ -28,5 +28,5 @@ function oddEvenList(head) {
   // connect the odd nodes with even nodes
   odd.next = evenHead;
 
-  return head;
+  return output;
 }
