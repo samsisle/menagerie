@@ -13,7 +13,7 @@ function maxArea(A) {
   let area = 0;
 
   while (start < end) {
-    // find the max area
+    // find the max area; find the area of the rectangle
     area = Math.max(area, Math.min(A[start], A[end]) * (end - start));
 
     // move the shorter pointer
