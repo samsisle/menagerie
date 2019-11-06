@@ -13,13 +13,11 @@ function maxArea(A) {
   let area = 0;
 
   while (start < end) {
+    // find the max area
     area = Math.max(area, Math.min(A[start], A[end]) * (end - start));
 
-    if (A[start] < A[end]) {
-      start++;
-    } else {
-      end--;
-    }
+    // move the shorter pointer
+    A[start] < A[end] ? start++ : end--;
   }
 
   return area;
