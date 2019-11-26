@@ -2,6 +2,8 @@
  * Pass the executing function as a callback from wherever
  * to test the performance accurately in seconds (converted
  * from milliseconds).
+ * 
+ * I could just be using console.time('loop') & console.timeEnd('loop').
  */
 
 const { performance } = require('perf_hooks');
