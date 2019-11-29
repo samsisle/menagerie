@@ -1,17 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import { stars } from '../lib/stars';
+import "../css/Stars.css";
 
-import '../css/Stars.css';
+const stars = [
+  { id: 1, left: 0.5, right: 1 },
+  { id: 2, left: 1.5, right: 2 },
+  { id: 3, left: 2.5, right: 3 },
+  { id: 4, left: 3.5, right: 4 },
+  { id: 5, left: 4.5, right: 5 }
+];
 
 export default function Stars() {
-  const [rating, setRating] = useState(Number(window.localStorage.getItem('rating') || 0));
+  const [rating, setRating] = useState(
+    Number(window.localStorage.getItem("rating") || 0)
+  );
   const [hover, setHover] = useState(0);
 
   function handleRating(n) {
     return () => {
       setRating(n);
-      window.localStorage.setItem('rating', n);
+      window.localStorage.setItem("rating", n);
       setHover(0);
     };
   }
@@ -24,18 +32,18 @@ export default function Stars() {
   }
 
   function handleMouseLeave() {
-    setRating(Number(window.localStorage.getItem('rating')));
+    setRating(Number(window.localStorage.getItem("rating")));
     setHover(0);
   }
 
   function handleColor(n) {
-    if (hover >= n) return '#1da1f2';
-    else return rating >= n ? '#51bb7b' : '#808080';
+    if (hover >= n) return "#1da1f2";
+    else return rating >= n ? "#51bb7b" : "#808080";
   }
 
   function handleReset() {
     setRating(0);
-    window.localStorage.setItem('rating', 0);
+    window.localStorage.setItem("rating", 0);
   }
 
   return (
