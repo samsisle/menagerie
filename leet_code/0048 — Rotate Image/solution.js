@@ -7,6 +7,16 @@
  * Space Complexity : O(1)
  */
 
+/**
+ * Each iteration of the double-for-loop will swap 4 #'s.
+ *
+ * For example:
+ *
+ * [1,2,3]        [7,2,1]
+ * [4,5,6]  --->  [4,5,6]
+ * [7,8,9]        [9,8,3]
+ */
+
 function rotateImage(matrix) {
   let n = matrix.length;
 
