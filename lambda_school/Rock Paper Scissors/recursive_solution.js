@@ -3,7 +3,7 @@
  * Author : samsisle
  * Date   : 2019-08-31
  *
- * Time Complexity  : ??
+ * Time Complexity  : (3^n)
  * Space Complexity : ??
  */
 
