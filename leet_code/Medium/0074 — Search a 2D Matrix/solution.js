@@ -7,7 +7,7 @@
  * Space Complexity : O(1)
  */
 
-const performance = require('../../performance');
+const performance = require('../../../performance');
 
 function searchMatrix(matrix, target) {
   if (matrix.length === 0 || matrix[0].length === 0) return false;

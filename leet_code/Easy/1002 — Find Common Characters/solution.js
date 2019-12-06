@@ -7,7 +7,7 @@
  * Space Complexity : O(1)
  */
 
-const performance = require('../../performance');
+const performance = require('../../../performance');
 
 function commonChars(arr) {
   let firstStr = arr[0].split(''); // grab the first word

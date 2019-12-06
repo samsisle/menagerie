@@ -7,7 +7,7 @@
  * Space Complexity : O(1)
  */
 
-const performance = require('../../performance');
+const performance = require('../../../performance');
 
 /**
  * My original solution was not as efficient as haleyysz's solution

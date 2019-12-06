@@ -7,7 +7,7 @@
  * Space Complexity : O(n)
  */
 
-const performance = require('../../performance');
+const performance = require('../../../performance');
 
 function twoSum(nums, target) {
   let map = new Map();

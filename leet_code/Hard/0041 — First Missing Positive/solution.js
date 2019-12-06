@@ -7,7 +7,7 @@
  * Space Complexity : O(1)
  */
 
-const performance = require('../../performance');
+const performance = require('../../../performance');
 
 function firstMissingPositive(A) {
   let i = 0;

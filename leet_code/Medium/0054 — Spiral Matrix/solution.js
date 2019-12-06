@@ -7,7 +7,7 @@
  * Space Complexity : O(n)
  */
 
-const performance = require('../../performance');
+const performance = require('../../../performance');
 
 function spiralMatrix(matrix) {
   let spiralArray = [];

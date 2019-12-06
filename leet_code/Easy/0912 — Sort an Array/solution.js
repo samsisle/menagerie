@@ -7,7 +7,7 @@
  * Space Complexity : ??
  */
 
-const performance = require('../../performance');
+const performance = require('../../../performance');
 
 var quickSort = function(A) {
   if (A.length < 2) return A;

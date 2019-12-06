@@ -7,7 +7,7 @@
  * Space Complexity :  O(1)
  */
 
-const performance = require('../../performance');
+const performance = require('../../../performance');
 
 function binarySearch(nums, target) {
   // it's a great strategy to visualize things with 'pointers'
