@@ -19,10 +19,14 @@ function findAnagrams(S, P) {
   for (let i = 0; i < S.length; i++) {
     alphabet.remove(S.charCodeAt(i) - 97);
 
+    // intuitively confusing why it's done this way, but
+    // we need to have an add and remove step in every
+    // iteration once the "sliding window" moves forward
     if (i >= P.length) {
       alphabet.add(S.charCodeAt(i - P.length) - 97);
     }
-    
+
+    // alphabet.count is how many different letters are present in the store
     if (alphabet.count === 0) {
       output.push(i - P.length + 1);
     }
