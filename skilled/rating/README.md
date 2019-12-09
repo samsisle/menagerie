@@ -1,6 +1,6 @@
 [![rating](https://raw.githubusercontent.com/samsisle/menagerie/master/skilled/rating/src/lib/rating.png)](https://rating.now.sh)
 
-###### Demo: [https://rating.now.sh](https://rating.now.sh)
+###### Demo: [rating.now.sh](https://rating.now.sh)
 
 ## Installation
 
