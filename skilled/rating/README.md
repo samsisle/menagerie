@@ -7,8 +7,7 @@
 ```bash
 $ git clone https://github.com/samsisle/menagerie.git
 $ cd skilled/rating
-$ yarn
-$ yarn start
+$ yarn && yarn start
 ```
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
