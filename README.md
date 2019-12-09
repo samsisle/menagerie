@@ -2,5 +2,5 @@
 
 ## Menagerie
 
-- #### [LeetCode Profile](https://leetcode.com/samsisle/)
-- #### [HackerRank Profile](https://www.hackerrank.com/samsisle)
+- **[LeetCode Profile](https://leetcode.com/samsisle/)**
+- **[HackerRank Profile](https://www.hackerrank.com/samsisle)**
