@@ -21,6 +21,7 @@ function lengthOfLongestSubstring(S) {
     }
 
     // find max, set / replace s[j] value
+    // j - i + 1 -> "sliding window" technique
     max = Math.max(max, j - i + 1);
     map.set(s[j], j + 1);
   }
