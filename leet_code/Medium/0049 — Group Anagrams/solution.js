@@ -38,5 +38,12 @@ function groupAnagrams(strs) {
     }
   }
 
+  // map should look like this
+  // map = Map {  84 => [ 'eat', 'tea', 'ate' ],
+  // 116 => [ 'tan', 'nat' ],
+  // 76 => [ 'bat' ] }
+
   return [...map.values()];
 }
+
+console.log(groupAnagrams(['eat', 'tea', 'tan', 'ate', 'nat', 'bat']));
