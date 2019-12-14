@@ -28,11 +28,13 @@ const performance = require('../../../performance');
  */
 
 function removeDuplicates(nums) {
-  for (let i = 0, j = 1; j < nums.length; j++) {
+  let i = 0;
+  
+  for (let j = 1; j < nums.length; j++) {
     if (nums[j] === nums[j - 1]) i++;
     else nums[j - i] = nums[j];
   }
-  
+
   return nums.length - i;
 }
 
