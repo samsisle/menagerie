@@ -4,7 +4,7 @@ Implement **next permutation**, which rearranges numbers into the lexicographica
 
 If such arrangement is not possible, it must rearrange it as the lowest possible order (ie, sorted in ascending order).
 
-The replacement must be ![in-place](https://en.wikipedia.org/wiki/In-place_algorithm) and use only constant extra memory.
+The replacement must be **[in-place](https://en.wikipedia.org/wiki/In-place_algorithm)** and use only constant extra memory.
 
 Here are some examples. Inputs are in the left-hand column and its corresponding outputs are in the right-hand column.
 
