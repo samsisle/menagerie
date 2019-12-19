@@ -10,4 +10,8 @@ $ cd skilled/rating
 $ yarn && yarn start
 ```
 
+Deploy this project using [ZEIT Now](https://zeit.co/now):
+
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/samsisle/menagerie/tree/master/skilled/rating)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
