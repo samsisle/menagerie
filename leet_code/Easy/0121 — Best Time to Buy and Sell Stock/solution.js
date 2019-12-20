@@ -12,6 +12,7 @@ function maxProfit(prices) {
   let max = 0;
 
   for (let price of prices) {
+    // Looks cleaner than writing if elses
     minPrice = Math.min(minPrice, price);
     max = Math.max(max, price - minPrice);
   }
