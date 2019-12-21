@@ -7,12 +7,17 @@
  * Space Complexity : O(n)
  */
 
-var containsDuplicate = function(nums) {
+function containsDuplicate(nums) {
+  // use a map to keep track of visited numbers
   let map = new Map();
+
   for (let num of nums) {
-    if (map.has(num)) return true;
+    if (map.has(num)) {
+      return true;
+    }
+
     map.set(num, true);
   }
 
   return false;
-};
+}
