@@ -11,9 +11,18 @@ const performance = require('../../../performance');
 
 function twoSum(nums, target) {
   let map = new Map();
+
   for (let i = 0; i < nums.length; i++) {
+    // using simple algebraic math, we can
+    // calculate whether any of the visted numbers
+    // + nums[i] will equal to the target
     let num = target - nums[i];
-    if (map.has(num)) return [map.get(num), i];
+
+    if (map.has(num)) {
+      return [map.get(num), i];
+    }
+
+    // keep track of visited numbers
     map.set(nums[i], i);
   }
 }
