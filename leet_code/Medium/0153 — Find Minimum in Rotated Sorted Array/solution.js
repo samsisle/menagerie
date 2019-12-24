@@ -23,7 +23,8 @@ function findMin(nums) {
     if (nums[mid] > nums[mid + 1]) return nums[mid + 1];
     if (nums[mid] < nums[mid - 1]) return nums[mid];
 
-    // check if left side of mid is sorted
+    // check if left side of mid is sorted; we know
+    // the pivot is on the opposite side of the sorted one
     if (nums[mid] > nums[start]) start = mid + 1;
     else end = mid - 1;
   }
