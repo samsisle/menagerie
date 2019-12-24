@@ -23,7 +23,8 @@ function findMin(nums) {
     if (nums[mid] > nums[mid + 1]) return nums[mid + 1];
     if (nums[mid] < nums[mid - 1]) return nums[mid];
 
-    if (nums[mid] > nums[0]) start = mid + 1;
+    // check if left side of mid is sorted
+    if (nums[mid] > nums[start]) start = mid + 1;
     else end = mid - 1;
   }
 }
