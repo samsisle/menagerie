@@ -19,6 +19,7 @@ function findMin(nums) {
   while (start < end) {
     let mid = Math.floor((start + end) / 2);
 
+    // searching for the pivot
     if (nums[mid] > nums[mid + 1]) return nums[mid + 1];
     if (nums[mid] < nums[mid - 1]) return nums[mid];
 
