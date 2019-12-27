@@ -21,7 +21,9 @@ function longestPalindrome(S) {
   let i = 0; // main iterator
 
   while (i < S.length) {
-    (L = i), (R = i); // reset current left and right boundaries
+    // reset current left and right boundaries
+    L = i;
+    R = i;
 
     // move the right boundary first if there are duplicates
     while (R < maxIndex && S[R] === S[R + 1]) {
