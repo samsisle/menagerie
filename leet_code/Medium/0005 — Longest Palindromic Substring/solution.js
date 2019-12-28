@@ -46,10 +46,10 @@ function longestPalindrome(S) {
       maxL = L;
       maxR = R;
 
-      // if we reached max possible palindrome, we can break out;
-      // cuts down on unecessary loops
+      // if we reached max possible palindrome, we can
+      // return our string; cuts down on unecessary loops
       if (maxPalindromicLength === maxIndex) {
-        break;
+        return S;
       }
     }
   }
