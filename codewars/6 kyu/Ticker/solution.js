@@ -1,7 +1,7 @@
 /**
  * Source : https://www.codewars.com/kata/ticker/train/javascript
  * Author : samsisle
- * Date   : 2019-01-06
+ * Date   : 2020-01-06
  *
  * Time Complexity  : O(text + width)
  * Space Complexity : O(text + 2 * width)
