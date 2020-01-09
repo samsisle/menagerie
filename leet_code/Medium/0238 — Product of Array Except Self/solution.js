@@ -1,32 +1,31 @@
 /**
  * Source : https://leetcode.com/problems/product-of-array-except-self/
  * Author : samsisle
- * Date   : 2019-08-13
+ * Date   : 2020-01-08
  *
- * Time Complexity  : O(n)
+ * Time Complexity  : O(2n)
  * Space Complexity : O(1)
  */
 
-const performance = require('../../../performance');
-
 function productExceptSelf(nums) {
-  let output = [];
+  const products = Array(nums.length);
   let product = 1;
 
   // find products of left side
-  for (num of nums) {
-    output.push(product);
-    product *= num;
+  for (let i = 0; i < nums.length; i++) {
+    products[i] = product;
+    product *= nums[i];
   }
+
   product = 1;
 
   // multiple products from right side
   for (let i = nums.length - 1; i >= 0; i--) {
-    output[i] *= product;
+    products[i] *= product;
     product *= nums[i];
   }
 
-  return output;
+  return products;
 }
 
 // left side products <-> right side products
@@ -38,4 +37,4 @@ function productExceptSelf(nums) {
 // after first loop of getting the product of the left-side
 // output = [1, 1, 2, 6]
 
-performance.test(() => productExceptSelf([1, 2, 3, 4]));
+console.log(productExceptSelf([1, 2, 3, 4]));
