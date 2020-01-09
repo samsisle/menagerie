@@ -9,20 +9,16 @@
 
 function productExceptSelf(nums) {
   const products = Array(nums.length);
-  let product = 1;
+  let pL = 1; // left products
+  let pR = 1; // right products
 
-  // find products of left side
   for (let i = 0; i < nums.length; i++) {
-    products[i] = product;
-    product *= nums[i];
-  }
+    const j = nums.length - 1 - i;
 
-  product = 1;
-
-  // multiple products from right side
-  for (let i = nums.length - 1; i >= 0; i--) {
-    products[i] *= product;
-    product *= nums[i];
+    products[i] = pL;
+    products[j] *= pR;
+    pL *= nums[i];
+    pR *= nums[j];
   }
 
   return products;
