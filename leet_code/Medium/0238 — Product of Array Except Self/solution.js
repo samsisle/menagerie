@@ -8,14 +8,14 @@
  */
 
 function productExceptSelf(nums) {
-  const products = Array(nums.length);
+  const products = Array(nums.length).fill(1);
   let pL = 1; // left products
   let pR = 1; // right products
 
   for (let i = 0; i < nums.length; i++) {
     const j = nums.length - 1 - i;
 
-    products[i] = pL;
+    products[i] *= pL;
     products[j] *= pR;
     pL *= nums[i];
     pR *= nums[j];
