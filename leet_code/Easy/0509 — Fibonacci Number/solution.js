@@ -8,14 +8,10 @@
  */
 
 function fibby(n) {
-  const memo = {};
+  const memo = { 0: 0, 1: 1 };
 
-  for (let i = 0; i <= n; i++) {
-    if (i <= 1) {
-      memo[i] = i;
-    } else {
-      memo[i] = memo[i - 1] + memo[i - 2];
-    }
+  for (let i = 2; i <= n; i++) {
+    memo[i] = memo[i - 1] + memo[i - 2];
   }
   
   return memo[n];
