@@ -7,7 +7,7 @@
  * Space Complexity : O(n)
  */
 
-function fibbo(n) {
+function fibby(n) {
   const memo = {};
 
   for (let i = 0; i <= n; i++) {
@@ -21,4 +21,4 @@ function fibbo(n) {
   return memo[n];
 }
 
-console.log(fibbo(42));
+console.log(fibby(42));
