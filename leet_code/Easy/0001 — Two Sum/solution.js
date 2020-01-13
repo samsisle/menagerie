@@ -1,7 +1,7 @@
 /**
  * Source : https://leetcode.com/problems/two-sum/
  * Author : samsisle
- * Date   : 2019-08-05
+ * Date   : 2019-01-12
  *
  * Time Complexity  : O(n)
  * Space Complexity : O(n)
@@ -14,10 +14,10 @@ function twoSum(nums, target) {
     // using simple algebraic math, we can
     // calculate whether any of the visted numbers
     // + nums[i] will equal to the target
-    const num = target - nums[i];
+    const diff = target - nums[i];
 
-    if (map.has(num)) {
-      return [map.get(num), i];
+    if (map.has(diff)) {
+      return [map.get(diff), i];
     }
 
     // keep track of visited numbers
