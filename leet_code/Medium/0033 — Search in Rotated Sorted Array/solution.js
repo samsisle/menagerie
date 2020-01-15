@@ -1,7 +1,7 @@
 /**
  * Source : https://leetcode.com/problems/search-in-rotated-sorted-array/
  * Author : samsisle
- * Date   : 2019-12-23
+ * Date   : 2019-01-14
  *
  * Time Complexity  : O(logn)
  * Space Complexity : O(1)
@@ -17,7 +17,7 @@ function search(nums, target) {
   let end = nums.length - 1;
 
   while (start <= end) {
-    let mid = Math.floor((start + end) / 2);
+    const mid = Math.floor((start + end) / 2);
 
     // if start, mid, or end equals the target
     switch (target) {
