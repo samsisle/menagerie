@@ -1,33 +1,28 @@
 /**
  * Source : https://leetcode.com/problems/linked-list-cycle/
  * Author : samsisle
- * Date   : 2019-08-13
+ * Date   : 2019-01-17
  *
  * Time Complexity  : O(n)
- * Space Complexity : O(n)
+ * Space Complexity : O(1)
  */
 
- /**
- * Definition for singly-linked list.
- * function ListNode(val) {
- *     this.val = val;
- *     this.next = null;
- * }
- */
+function hasCycle(head) {
+  if (!head) return false;
 
-/**
- * @param {ListNode} head
- * @return {boolean}
- */
+  let slow = head;
+  let fast = head.next;
 
-var hasCycle = function(head) {
-  let set = new Set();
-  
-  while (head) {
-      if (set.has(head)) return true;
-      set.add(head);
-      head = head.next;
+  while (fast) {
+    if (!fast.next) {
+      return false;
+    } else if (slow === fast) {
+      return true;
+    } else {
+      slow = slow.next;
+      fast = fast.next.next;
+    }
   }
-  
+
   return false;
-};
+}
