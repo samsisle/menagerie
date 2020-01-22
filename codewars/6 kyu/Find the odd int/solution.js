@@ -10,3 +10,13 @@
 function findOdd(A) {
   return A.reduce((a, c) => a ^ c);
 }
+
+function findOddAlt(A) {
+  let result = 0;
+
+  for (const num of A) {
+    result = result ^ num;
+  }
+
+  return result;
+}
