@@ -10,7 +10,7 @@
 function isAnagram(s, t) {
   if (s.length !== t.length) return false;
 
-  let alphabet = Array(26).fill(0);
+  const alphabet = Array(26).fill(0);
 
   for (let i = 0; i < s.length; i++) {
     alphabet[s.charCodeAt(i) - 97]++;
