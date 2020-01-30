@@ -9,11 +9,12 @@
 
 function productExceptSelf(nums) {
   const products = Array(nums.length).fill(1);
+  const len = nums.length;
   let pL = 1; // left products
   let pR = 1; // right products
 
-  for (let i = 0; i < nums.length; i++) {
-    const j = nums.length - 1 - i;
+  for (let i = 0; i < len; i++) {
+    const j = len - 1 - i;
 
     products[i] *= pL;
     products[j] *= pR;
