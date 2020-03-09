@@ -9,19 +9,10 @@
 
 function universityCareerFair(arrival, duration) {
   let maxEvents = 0;
-  let t = -Infinity;
+  let t = 0;
 
   // combine arrival and duration into a 2d array
   const arrDur = arrival.map((num, i) => [num, duration[i]]);
-
-  // sort 2d array by arrival, then duration
-  arrDur.sort((a, b) => {
-    if (b[0] - a[0] !== 0) {
-      return a[0] - b[0];
-    } else {
-      return a[1] - b[1];
-    }
-  });
 
   // calculate the maximum number of events that can be hosted
   for (const [arr, dur] of arrDur) {
