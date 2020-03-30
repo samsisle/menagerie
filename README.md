@@ -4,6 +4,10 @@
 
 - **[CodeWars](https://github.com/samsisle/menagerie/tree/master/codewars)** – [Profile](https://www.codewars.com/users/samsisle)
 
+- **[Daily Code Problem](https://github.com/samsisle/menagerie/tree/master/daily_code_problem)**
+
+  - [[Easy]](https://github.com/samsisle/menagerie/tree/master/daily_code_problem/%5BEasy%5D)
+
 - **[Interview Questions](https://github.com/samsisle/menagerie/tree/master/interview_questions)**
 
 - **[LeetCode](https://github.com/samsisle/menagerie/tree/master/leet_code)** – [Profile](https://leetcode.com/samsisle/)
