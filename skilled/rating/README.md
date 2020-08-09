@@ -1,6 +1,6 @@
-[![rating](https://raw.githubusercontent.com/samsisle/menagerie/master/skilled/rating/src/lib/rating.png)](https://rating.now.sh)
+[![rating](https://raw.githubusercontent.com/samsisle/menagerie/master/skilled/rating/src/lib/rating.png)](https://rating.vercel.app/)
 
-###### Demo: [rating.now.sh](https://rating.now.sh)
+###### Demo: [rating.vercel.app](https://rating.vercel.app/)
 
 ## Installation
 
