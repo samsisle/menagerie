@@ -22,4 +22,4 @@
 - **[HackerRank](https://www.hackerrank.com/dashboard)** – [Profile](https://www.hackerrank.com/samsisle?hr_r=1)
 
 - **[Skilled](https://github.com/samsisle/menagerie/tree/master/skilled/rating)**
-  - **[Rating:](https://github.com/samsisle/menagerie/tree/master/skilled/rating)** [rating.now.sh](https://rating.now.sh/)
+  - **[Rating:](https://github.com/samsisle/menagerie/tree/master/skilled/rating)** [rating.vercel.app](https://rating.vercel.app/)
