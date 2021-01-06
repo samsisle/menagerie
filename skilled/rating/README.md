@@ -14,4 +14,4 @@ Deploy this project using [Vercel](https://vercel.com):
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/project?template=https://github.com/samsisle/menagerie/tree/master/skilled/rating)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create Next App](https://nextjs.org/docs/api-reference/create-next-app).
