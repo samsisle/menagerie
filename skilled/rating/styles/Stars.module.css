@@ -1,0 +1,25 @@
+.stars {
+  display: flex;
+  margin-right: 1rem;
+}
+
+.star {
+  display: flex;
+}
+
+.reset {
+  background-color: #333333;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  height: 48px;
+  letter-spacing: 0.01rem;
+  padding: 0;
+  width: 144px;
+}
+
+.reset:focus {
+  outline: 0;
+}
