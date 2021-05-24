@@ -1,4 +1,4 @@
-[![rating](https://raw.githubusercontent.com/samsisle/menagerie/master/skilled/rating/src/lib/rating.png)](https://rating.vercel.app/)
+[![rating](https://raw.githubusercontent.com/samsisle/menagerie/main/skilled/rating/public/rating.png)](https://rating.vercel.app/)
 
 ###### Demo: [rating.vercel.app](https://rating.vercel.app/)
 
